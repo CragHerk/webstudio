@@ -7,7 +7,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Homework3</title>
+    <title>Homework4</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -20,6 +20,7 @@
         <a class="logo" href="index.html"
           ><span>Web</span><span class="studio">Studio</span></a
         >
+
         <nav>
           <ul class="menu">
             <li><a class="permalink" href="index.html">Agencja</a></li>
@@ -27,12 +28,17 @@
             <li><a class="permalink" href="kontakt">Kontakt</a></li>
           </ul>
         </nav>
+
         <ul class="write">
           <li>
-            <a class="permalink-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com"
+              ><svg class="email" width="16" height="12">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
+
           <li>
             <a class="permalink-mail" href="tel:+048111111111">
               +048 111 111 111</a
@@ -43,15 +49,17 @@
     </header>
 
     <main>
-      <section class="section-tittle">
-        <div class="container">
-          <h1 class="tittle">
-            EFEKTYWNE ROZWIĄZANIA <br />
-            DLA WASZEGO BIZNESU
-          </h1>
-          <button class="service" type="button">Zamów usługę</button>
-        </div>
-      </section>
+      <div class="background">
+        <section class="section-tittle">
+          <div class="container">
+            <h1 class="tittle">
+              EFEKTYWNE ROZWIĄZANIA <br />
+              DLA WASZEGO BIZNESU
+            </h1>
+            <button class="service" type="button">Zamów usługę</button>
+          </div>
+        </section>
+      </div>
 
       <section class="section-lorem">
         <div class="container">
@@ -206,3 +214,4 @@
     </footer>
   </body>
 </html>
+
