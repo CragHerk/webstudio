@@ -39,6 +39,12 @@ body {
   text-decoration: none;
   color: var(--blue);
 }
+.email {
+  width: 26px;
+  height: 12px;
+  padding-right: 10px;
+  fill: var(--grey);
+}
 .studio {
   color: var(--black);
 }
@@ -80,7 +86,7 @@ body {
 .write {
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+
   letter-spacing: 0.03em;
   list-style: none;
   display: flex;
@@ -88,7 +94,7 @@ body {
 }
 .section-tittle {
   padding: 94px;
-  background-color: var(--second);
+
   text-align: center;
 }
 .section-lorem {
@@ -100,6 +106,14 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.background {
+  background-image: url(/Users/okras/Documents/GO-IT/HW4/images/background.jpg);
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+}
+
 .tittle {
   font-weight: 900;
   font-size: 44px;
@@ -300,3 +314,4 @@ body {
   letter-spacing: 0.03em;
   padding-top: 8px;
 }
+
