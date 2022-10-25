@@ -2,201 +2,294 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Zadanie domowe GOIT Polska - Figma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="border-line">
-      <div class="page-header container">
-        <a class="logo" href="index.html"
-          ><span>Web</span><span class="studio">Studio</span></a
-        >
-        <nav>
-          <ul class="menu">
-            <li><a class="permalink" href="index.html">Agencja</a></li>
-            <li><a class="permalink" href="portfolio.html">Portfolio</a></li>
-            <li><a class="permalink" href="kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
-        <ul class="write">
-          <li>
-            <a class="permalink-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="permalink-mail" href="tel:+048111111111">
-              +048 111 111 111</a
-            >
-          </li>
-        </ul>
+    <header class="header">
+      <div class="container">
+        <div class="top">
+          <div class="logo-top">
+            <a href="index.html"><span class="blue">Web</span>studio</a>
+          </div>
+          <nav class="nav">
+            <a href="#">agencja</a>
+            <a href="portfolio.html">portfolio</a>
+            <a href="#">kontakt</a>
+          </nav>
+          <div class="top-links">
+            <ul class="contacts-top">
+              <li class="contact-details-top">
+                <div class="mail">
+                  <svg class="envelope-icon">
+                    <use
+                      height="16px"
+                      width="16px"
+                      href="./images/icons.svg#icon-envelope"
+                    ></use>
+                  </svg>
+                  <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                </div>
+              </li>
+              <li class="contact-details-top">
+                <div class="phone">
+                  <svg class="phone-icon">
+                    <use
+                      height="16px"
+                      width="10px"
+                      href="./images/icons.svg#icon-smartphone"
+                    ></use>
+                  </svg>
+                  <a href="tel:+48111111111"> +48 111 111 111</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
-    <main class="background">
+    <section class="main-portfolio section">
       <div class="container">
-        <ul class="button-list">
-          <li><button class="click" type="button">Wszystkie</button></li>
-          <li><button class="click" type="button">Strony</button></li>
-          <li><button class="click" type="button">Aplikacje</button></li>
-          <li><button class="click" type="button">Dizajn</button></li>
-          <li><button class="click" type="button">Marketing</button></li>
+        <ul class="no-bullets filters">
+          <li><button type="button" class="button">Wszystkie</button></li>
+          <li><button type="button" class="button">Strony</button></li>
+          <li><button type="button" class="button">Aplikacje</button></li>
+          <li><button type="button" class="button">Dizajn</button></li>
+          <li><button type="button" class="button">Marketing</button></li>
         </ul>
-        <ul class="description-img">
-          <li class="img">
+      </div>
+      <div class="container">
+        <ul class="cards">
+          <li class="card">
             <figure>
               <img
+                class="cardimg"
                 src="images/technocrack.jpg"
                 alt="laptop"
                 width="370"
                 height="294"
               />
-              <figcaption class="border">
-                <p class="image-name">Technocrack</p>
-                <p class="about-img">Strona internetowa</p>
+              <figcaption class="project-type">
+                <h4 class="project-title">Technotrack</h4>
+                <br />Strona internetowa
               </figcaption>
             </figure>
           </li>
-          <li class="img">
+          <li class="card">
             <figure>
               <img
+                class="cardimg"
                 src="images/orleanstar.jpg"
-                alt="mecz koszykowki"
+                alt="koszykarze"
                 width="370"
                 height="294"
               />
-              <figcaption class="border">
-                <p class="image-name">New Orlean vs Golden Star</p>
-                <p class="about-img">Dizajn</p>
+              <figcaption class="project-type">
+                <h4 class="project-title">
+                  Grafika New Orleans vs Golden Star
+                </h4>
+                <br />Dizajn
               </figcaption>
             </figure>
           </li>
-          <li class="img">
+          <li class="card">
             <figure>
               <img
+                class="cardimg"
                 src="images/seafood.jpg"
-                alt="plakat z rekinem"
+                alt="logo restauracji"
                 width="370"
                 height="294"
               />
-              <figcaption class="border">
-                <p class="image-name">Restauracja Seafood</p>
-                <p class="about-img">Aplikacja</p>
+              <figcaption class="project-type">
+                <h4 class="project-title">Restauracja Seafood</h4>
+                <br />Aplikacja
               </figcaption>
             </figure>
           </li>
-          <li class="img">
+          <li class="card">
             <figure>
               <img
+                class="cardimg"
                 src="images/projektprime.jpg"
                 alt="słuchawki"
                 width="370"
                 height="294"
               />
-              <figcaption class="border">
-                <p class="image-name">Projekt Prime</p>
-                <p class="about-img">Marketing</p>
+              <figcaption class="project-type">
+                <h4 class="project-title">Projekt Prime</h4>
+                <br />Marketing
               </figcaption>
             </figure>
           </li>
-          <li class="img">
+          <li class="card">
             <figure>
               <img
+                class="cardimg"
                 src="images/projektboxes.jpg"
-                alt="dwa pudełka"
+                alt="pudełka"
                 width="370"
                 height="294"
               />
-              <figcaption class="border">
-                <p class="image-name">Projekt Boxes</p>
-                <p class="about-img">Aplikacja</p>
+              <figcaption class="project-type">
+                <h4 class="project-title">Projekt Boxes</h4>
+                <br />Aplikacja
               </figcaption>
             </figure>
           </li>
-          <li class="img">
+          <li class="card">
             <figure>
               <img
+                class="cardimg"
                 src="images/inspirationborders.jpg"
-                alt="akran komputera"
+                alt="monitor"
                 width="370"
                 height="294"
               />
-              <figcaption class="border">
-                <p class="image-name">Inspiration has no Borders</p>
-                <p class="about-img">Strona internetowa</p>
+              <figcaption class="project-type">
+                <h4 class="project-title">Inspiration has no Borders</h4>
+                <br />Strona internetowa
               </figcaption>
             </figure>
           </li>
-          <li class="img">
+          <li class="card">
             <figure>
               <img
+                class="cardimg"
                 src="images/magazynliedition.jpg"
-                alt="gazeta"
+                alt="czasopismo"
                 width="370"
                 height="294"
               />
-              <figcaption class="border">
-                <p class="image-name">Limited Edition</p>
-                <p class="about-img">Dizajn</p>
+              <figcaption class="project-type">
+                <h4 class="project-title">Magazyn Limited Edition</h4>
+                <br />Dizajn
               </figcaption>
             </figure>
           </li>
-          <li class="img">
+          <li class="card">
             <figure>
               <img
+                class="cardimg"
                 src="images/projektlab.jpg"
-                alt="etykieta"
+                alt="metka"
                 width="370"
                 height="294"
               />
-              <figcaption class="border">
-                <p class="image-name">Projekt LAB</p>
-                <p class="about-img">Marketing</p>
+              <figcaption class="project-type">
+                <h4 class="project-title">Projekt LAB</h4>
+                <br />Marketing
               </figcaption>
             </figure>
           </li>
-          <li class="img">
+          <li class="card">
             <figure>
               <img
+                class="cardimg"
                 src="images/growingbuisness.jpg"
-                alt="laptop"
+                alt="ręce na laptopie"
                 width="370"
                 height="294"
               />
-              <figcaption class="border">
-                <p class="image-name">Growing Business</p>
-                <p class="about-img">Aplikacja</p>
+              <figcaption class="project-type">
+                <h4 class="project-title">Growing Business</h4>
+                <br />Aplikacja
               </figcaption>
             </figure>
           </li>
         </ul>
       </div>
-    </main>
-    <footer class="end">
+    </section>
+    <footer class="footer">
       <div class="container">
-        <a class="logo" href="index.html"
-          ><span>Web</span><span class="color">Studio</span></a
-        >
-        <address class="contact">
-          <ul class="footer-address">
-            <li class="address-list">m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li class="mail">
-              <a class="permalink" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="mail">
-              <a class="permalink" href="tel:+048111111111">+048 111 111 111</a>
-            </li>
-          </ul>
-        </address>
+        <div class="footerflex">
+          <div>
+            <div class="logo-bottom">
+              <a href="index.html"><span class="blue">Web</span>Studio</a>
+            </div>
+
+            <div class="contact-bottom">
+              <address class="contact-bottom-address">
+                m.Warszawa, Aleje Jerozolimskie 21
+              </address>
+              <div class="contact-bottom-links">
+                <ul class="contacts">
+                  <li class="contact-detail">
+                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                  <li class="contact-detail">
+                    <a href="tel:+48111111111">+48 111 111 111</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="joinus">
+            <h4 class="joinus-header">DOŁĄCZ DO NAS</h4>
+            <ul class="no-bullets social-list">
+              <li>
+                <a href="#">
+                  <div class="social-icon-circle-footer">
+                    <svg class="social-icon">
+                      <use
+                        height="20px"
+                        width="20px"
+                        href="./images/icons.svg#icon-instagram-2"
+                      ></use>
+                    </svg></div
+                ></a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="social-icon-circle-footer">
+                    <svg class="social-icon">
+                      <use
+                        height="20px"
+                        width="20px"
+                        href="./images/icons.svg#icon-twitter-1"
+                      ></use>
+                    </svg></div
+                ></a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="social-icon-circle-footer">
+                    <svg class="social-icon">
+                      <use
+                        height="20px"
+                        width="20px"
+                        href="./images/icons.svg#icon-facebook-1"
+                      ></use>
+                    </svg></div
+                ></a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="social-icon-circle-footer">
+                    <svg class="social-icon">
+                      <use
+                        height="20px"
+                        width="20px"
+                        href="./images/icons.svg#icon-linkedin-1"
+                      ></use>
+                    </svg></div
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
