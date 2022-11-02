@@ -37,7 +37,7 @@
                     <use
                       height="16px"
                       width="16px"
-                      href="./images/icons.svg#icon-envelope"
+                      href="./../images/icons.svg#icon-envelope"
                     ></use>
                   </svg>
                   <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
@@ -63,7 +63,7 @@
     <div class="intro">
       <div class="container banner">
         <h1 class="slogan">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="button bluebutton">zamów usługę</button>
+        <button  type="button" class="button bluebutton" data-modal-open >zamów usługę</button>
       </div>
     </div>
     <main>
@@ -551,5 +551,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>x</button>
+      </div>
+
+
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
