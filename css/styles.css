@@ -465,6 +465,8 @@ body {
   justify-content: center;
   display: flex;
   margin-top: 20px;
+  transition: fill 250ms, border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon-circle-footer:hover {
   background-color: var(--blue);
