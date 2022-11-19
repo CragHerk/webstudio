@@ -556,13 +556,35 @@
                 </a>
               </li>
             </ul>
+            
           </div>
+          <div>Zapisz się do newslettera
+            <input type="text" placeholder="Email">
+            <button>Wyślij</button>
+          </div>
+
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>x</button>
+        <form class="formcard">
+          <label class="formcard__label formcard__header">Zostaw swoje dane w formularzu poniżej</label>
+          <label class="formcard__label">imię </label>
+            <input type="text" name="username" class="modalinput" >
+            <svg class="person-icon" width="12px" height="12px"></svg>
+          <label class="formcard__label">telefon </label>
+            <input type="number" class="modalinput" >
+            <svg class="person-icon" width="13px" height="13px"></svg>
+          <label class="formcard__label">email</label>
+            <input type="email" class="modalinput" >
+            <svg class="person-icon" width="15px" height="12px"></svg>
+          <label class="formcard__label">komentarz</label>
+            <textarea name="feedback" rows="3" class="modalinput modaltextarea" placeholder="Wprowadź tekst" ></textarea>
+          <label class="formcard__label formcard__footer">Oświadczam iż akceptuję regulamin i politykę prywatności</label>
+          <button class="button modal__button" > Wyślij </button>
+        </form>
       </div>
 
 
