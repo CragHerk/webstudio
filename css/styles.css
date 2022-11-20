@@ -607,15 +607,15 @@ body {
   display: flex;
 }
 #name-icon {
-  top: 94px;
+  top: 97px;
 }
 
 #phone-icon {
-  top: 160px;
+  top: 165px;
 }
 
 #mail-icon {
-  top: 222px;
+  top: 232px;
 }
 .newsletter {
   margin-top: 72px;
