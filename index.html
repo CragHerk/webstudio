@@ -558,9 +558,13 @@
             </ul>
             
           </div>
-          <div>Zapisz się do newslettera
-            <input type="text" placeholder="Email">
-            <button>Wyślij</button>
+          <div class="newsletter"><h4 class="newsletter__header">Zapisz się do newslettera</h4>
+            <input class="newsletter__input" type="text" placeholder="Email">
+            <button type="submit" class="button newsletter__button">Zapisz się
+              <svg width="24px" height="24px">
+                <use href="images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </div>
 
         </div>
@@ -571,30 +575,46 @@
         <button type="button" class="close-btn" data-modal-close>x</button>
         <form class="formcard">
           <label class="formcard__label formcard__header">Zostaw swoje dane w formularzu poniżej</label>
-          <label class="formcard__label">imię </label>
+          <label class="formcard__label">Imię </label>
          
             <input type="text" name="username" class="modalinput" >
             <svg class="person-icon" id="name-icon" width="12px" height="12px">
               <use href="./images/icons.svg#icon-icon-person"></use>
             </svg>
             
-          <label class="formcard__label">telefon </label>
+          <label class="formcard__label">Telefon </label>
           
             <input type="number" class="modalinput" >
             <svg class="person-icon" id="phone-icon" width="13px" height="13px">
               <use href="./images/icons.svg#icon-icon-tel"></use>
             </svg>
             
-          <label class="formcard__label">email</label>
+          <label class="formcard__label">Email</label>
         
             <input type="email" class="modalinput" >
             <svg class="person-icon" id="mail-icon" width="15px" height="12px">
               <use href="./images/icons.svg#icon-icon-mail"></use>
             </svg>
             
-          <label class="formcard__label">komentarz</label>
+          <label class="formcard__label">Komentarz</label>
             <textarea name="feedback" rows="3" class="modalinput modaltextarea" placeholder="Wprowadź tekst" ></textarea>
-          <label class="formcard__label formcard__footer">Oświadczam iż akceptuję regulamin i politykę prywatności</label>
+            <label class="checkbox">
+              <input class="checkbox-text" name="statute" type="checkbox" value="Accept the regulations and privcy policy">
+              <span class="checkmark">
+                <svg class="checkbox-icon">
+                  <use href="./images/icons.svg#icon-icon-check"></use>
+                </svg>
+              </span>
+            
+              <p class="modal-checkbox-text">
+                Oświadczam iż akceptuję
+                <a href class="regulations">Regulamin</a>
+                i
+                <a href class="regulations">Politykę prywatności</a>
+                .
+              </p>
+             
+            </label>
           <button class="button modal__button" > Wyślij </button>
         </form>
       </div>
