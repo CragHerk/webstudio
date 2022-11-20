@@ -581,26 +581,31 @@
             <svg class="person-icon" id="name-icon" width="12px" height="12px">
               <use href="./images/icons.svg#icon-icon-person"></use>
             </svg>
+            
           <label class="formcard__label">Telefon </label>
+          
             <input type="number" class="modalinput" >
             <svg class="person-icon" id="phone-icon" width="13px" height="13px">
               <use href="./images/icons.svg#icon-icon-tel"></use>
             </svg>
+            
           <label class="formcard__label">Email</label>
+        
             <input type="email" class="modalinput" >
             <svg class="person-icon" id="mail-icon" width="15px" height="12px">
               <use href="./images/icons.svg#icon-icon-mail"></use>
             </svg>
+            
           <label class="formcard__label">Komentarz</label>
             <textarea name="feedback" rows="3" class="modalinput modaltextarea" placeholder="Wprowadź tekst" ></textarea>
             <label class="checkbox">
               <input class="checkbox-text" name="statute" type="checkbox" value="Accept the regulations and privcy policy">
-              <label class="checkmark">
+              <span class="checkmark">
                 <svg class="checkbox-icon">
                   <use href="./images/icons.svg#icon-icon-check"></use>
-                  </label>
-              </div>
-                <label>
+                </svg>
+              </span>
+            
               <p class="modal-checkbox-text">
                 Oświadczam iż akceptuję
                 <a href class="regulations">Regulamin</a>
@@ -608,11 +613,13 @@
                 <a href class="regulations">Politykę prywatności</a>
                 .
               </p>
-           
+             
+            </label>
           <button class="button modal__button" > Wyślij </button>
-               </label>
         </form>
       </div>
+
+
     </div>
     <script src="./js/modal.js"></script>
   </body>
