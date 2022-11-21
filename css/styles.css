@@ -659,6 +659,9 @@ body {
 
 .checkbox-icon {
   position: absolute;
+  width:15px;
+  height:16px;
+  
 }
 
 .modalinput:hover {
