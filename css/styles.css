@@ -664,6 +664,7 @@ body {
 .checkmark{
   width:15px;
   height:16px;
+  visibility: hidden;
 }
 
 .modalinput:hover {
