@@ -645,7 +645,6 @@ body {
 .checkbox {
   display: flex;
   margin-left: 55px;
- 
   margin-top: 20px;
 }
 .modal-checkbox-text {
@@ -668,6 +667,7 @@ body {
 .checkmark{
   width:15px;
   height:16px;
+  position:absolute;
  
 }
 
