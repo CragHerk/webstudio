@@ -642,6 +642,32 @@ body {
   transition: fill 250ms, border-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* checkbox */
+.formcard__checkbox {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.formcard__checkbox-text {
+  margin-left: ;
+  margin-top: 25px;
+}
+.regulations {
+  color: #2196f3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.checkbox-icon {
+  visibility: hidden;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.checkbox-text {
+  padding-left: 15px;
+}
+.checkbox-text:checked + .checkbox-icon {
+  visibility: visible;
+}
+
 
 
 
