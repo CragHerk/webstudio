@@ -599,12 +599,15 @@
           <label class="formcard__label">Komentarz</label>
             <textarea name="feedback" rows="3" class="modalinput modaltextarea" placeholder="Wprowadź tekst" ></textarea>
             <label class="formcard__checkbox">
-              
-              <svg height="16px" width="15px" class="checkbox-icon">
-                <use href="./images/icons.svg#icon-icon-check" ></use>
-                
-              </svg>
               <input class="checkbox-text" name="statute" type="checkbox" value="Accept the regulations and privcy policy">
+              <span class="checkbox__span" >
+              <svg height="16px" width="15px" class="checkbox-icon"> 
+                <use href="./images/icons.svg#icon-icon-check" ></use>             
+              </svg>
+            </span>
+              
+            <span class="checkmark"></span>
+          </label>
               <p class="formcard__checkbox-text">
                 Oświadczam iż akceptuję
                 <a href class="regulations">Regulamin</a>
@@ -612,16 +615,10 @@
                 <a href class="regulations">Politykę prywatności</a>
                 .
               </p>
-              
-            
-              </label>
-               
-         
-        </form>
-          
+              <button class="button modal__button" type="submit" >Wyślij</button>
+                                              
+        </form>     
       </div>
-
-
     </div>
     <script src="./js/modal.js"></script>
   </body>
