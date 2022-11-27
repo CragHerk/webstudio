@@ -9,7 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,18 +21,18 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="top">
-          <div class="logo-top">
+        <div class="header__nav">
+          <div class="header__banner">
             <a href="index.html"><span class="blue">Web</span>studio</a>
           </div>
-          <nav class="nav">
+          <nav class="header__nav-items">
             <a href="index.html">Agencja</a>
             <a class="active" href="portfolio.html">Portfolio</a>
             <a href="#">Kontakt</a>
           </nav>
-          <div class="top-links">
-            <ul class="contacts-top">
-              <li class="contact-details-top">
+          <div class="header__links">
+            <ul class="header__contacts">
+              <li class="header__contact-details">
                 <div class="mail">
                   <svg class="envelope-icon">
                     <use
@@ -43,7 +44,7 @@
                   <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
                 </div>
               </li>
-              <li class="contact-details-top">
+              <li class="header__contact-details">
                 <div class="phone">
                   <svg class="phone-icon">
                     <use
@@ -60,9 +61,9 @@
         </div>
       </div>
     </header>
-    <section class="main-portfolio section">
+    <section class="portfolio section">
       <div class="container">
-        <ul class="no-bullets filters">
+        <ul class="section__style portfolio__filters">
           <li><button type="button" class="button">Wszystkie</button></li>
           <li><button type="button" class="button">Strony</button></li>
           <li><button type="button" class="button">Aplikacje</button></li>
@@ -71,11 +72,11 @@
         </ul>
       </div>
       <div class="container">
-        <ul class="cards">
-          <li class="card cover">
+        <ul class="container__cards">
+          <li class="container__card cover">
             <figure>
               <img
-                class="cardimg"
+                class="container__card-img"
                 src="images/technocrack.jpg"
                 alt="laptop"
                 width="370"
@@ -89,8 +90,8 @@
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="project-type">
-                <h4 class="project-title">Technotrack</h4>
+              <figcaption class="container__type">
+                <h4 class="container__caption">Technotrack</h4>
                 <br />Strona internetowa
               </figcaption>
             </figure>
@@ -112,8 +113,8 @@
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="project-type">
-                <h4 class="project-title">
+              <figcaption class="container__type">
+                <h4 class="container__caption">
                   Grafika New Orleans vs Golden Star
                 </h4>
                 <br />Dizajn
@@ -137,8 +138,8 @@
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="project-type">
-                <h4 class="project-title">Restauracja Seafood</h4>
+              <figcaption class="container__type">
+                <h4 class="container__caption">Restauracja Seafood</h4>
                 <br />Aplikacja
               </figcaption>
             </figure>
@@ -160,8 +161,8 @@
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="project-type">
-                <h4 class="project-title">Projekt Prime</h4>
+              <figcaption class="container__type">
+                <h4 class="container__caption">Projekt Prime</h4>
                 <br />Marketing
               </figcaption>
             </figure>
@@ -183,8 +184,8 @@
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="project-type">
-                <h4 class="project-title">Projekt Boxes</h4>
+              <figcaption class="container__type">
+                <h4 class="container__caption">Projekt Boxes</h4>
                 <br />Aplikacja
               </figcaption>
             </figure>
@@ -206,8 +207,8 @@
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="project-type">
-                <h4 class="project-title">Inspiration has no Borders</h4>
+              <figcaption class="container__type">
+                <h4 class="container__caption">Inspiration has no Borders</h4>
                 <br />Strona internetowa
               </figcaption>
             </figure>
@@ -229,8 +230,8 @@
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="project-type">
-                <h4 class="project-title">Magazyn Limited Edition</h4>
+              <figcaption class="container__type">
+                <h4 class="container__caption">Magazyn Limited Edition</h4>
                 <br />Dizajn
               </figcaption>
             </figure>
@@ -252,8 +253,8 @@
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="project-type">
-                <h4 class="project-title">Projekt LAB</h4>
+              <figcaption class="container__type">
+                <h4 class="container__caption">Projekt LAB</h4>
                 <br />Marketing
               </figcaption>
             </figure>
@@ -275,8 +276,8 @@
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="project-type">
-                <h4 class="project-title">Growing Business</h4>
+              <figcaption class="container__type">
+                <h4 class="container__caption">Growing Business</h4>
                 <br />Aplikacja
               </figcaption>
             </figure>
@@ -286,19 +287,19 @@
     </section>
     <footer class="footer">
       <div class="container">
-        <div class="footerflex">
+        <div class="footer__flex">
           <div>
-            <div class="logo-bottom">
+            <div class="footer__logo-bottom">
               <a href="index.html"><span class="blue">Web</span>Studio</a>
             </div>
 
-            <div class="contact-bottom">
-              <address class="contact-bottom-address">
+            <div class="footer__contact-bottom">
+              <address class="footer__contact-bottom-address">
                 m.Warszawa, Aleje Jerozolimskie 21
               </address>
-              <div class="contact-bottom-links">
-                <ul class="contacts">
-                  <li class="contact-detail">
+              <div class="footer__contact-bottom-links">
+                <ul class="footer__contacts">
+                  <li class="footer__contact-detail">
                     <a href="mailto:info@devstudio.com">info@devstudio.com</a>
                   </li>
                   <li class="contact-detail">
@@ -308,9 +309,9 @@
               </div>
             </div>
           </div>
-          <div class="joinus">
-            <h4 class="joinus-header">DOŁĄCZ DO NAS</h4>
-            <ul class="no-bullets social-list">
+          <div class="footer__socials">
+            <h4 class="footer__socials-header">DOŁĄCZ DO NAS</h4>
+            <ul class="section__style third-section__social-list">
               <li>
                 <a href="#">
                   <div class="social-icon-circle-footer">
