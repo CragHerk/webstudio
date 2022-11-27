@@ -1,0 +1,37 @@
+.third-section {
+  background-color: var(--white);
+  width: 1600px;
+  padding-bottom: 94px;
+}
+.third-section__workers {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 1170px;
+  margin: auto;
+}
+.third-section__worker {
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+.third-section__role {
+  text-align: center;
+  color: var(--grey);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+}
+.third-section__social-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}

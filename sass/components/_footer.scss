@@ -1,0 +1,54 @@
+.footer {
+  color: var(--white);
+  background-color: var(--footer-color);
+  margin-top: 94px;
+}
+.footer__flex {
+  display: flex;
+  gap: 70px;
+  align-items: top;
+}
+.footer__logo-bottom {
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 26px;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.footer__logo-bottom a {
+  text-decoration: none;
+  color: var(--white);
+}
+.footer__contact-bottom {
+  font-style: normal;
+  padding-bottom: 60px;
+
+  text-align: left;
+}
+.footer__contact-bottom-address {
+  font-style: normal;
+  text-align: left;
+  margin-top: 0;
+}
+.footer__contact-bottom-links a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer__contact-bottom-links a:hover {
+  color: var(--blue);
+  transition: fill 250ms, border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__contacts {
+  list-style-type: none;
+}
+.footer__contact-detail {
+  padding-top: 9px;
+}
+.footer__socials-header {
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer__socials {
+  padding-top: 72px;
+}

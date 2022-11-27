@@ -1,0 +1,29 @@
+.second-section {
+  padding-top: 94px;
+}
+.second-section__banner {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+.second-section__images {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  text-align: center;
+  padding-bottom: 94px;
+}
+.second-section__image {
+  position: relative;
+}
+.second-section__label {
+  width: 370px;
+  height: 70px;
+  background: var(--footer-color);
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  color: var(--white);
+  font-size: 14px;
+  padding-top: 27px;
+}

@@ -1,0 +1,113 @@
+.blue {
+  color: var(--blue);
+}
+
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+.header__contacts {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+  width: 360px;
+  height: 20px;
+}
+.header__contact-details {
+  display: inline-block;
+  font-size: 14px;
+  width: 160px;
+}
+.mail {
+  display: flex;
+
+  justify-content: center;
+}
+.mail:hover svg {
+  fill: var(--blue);
+  transition: fill 250ms, border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone:hover svg {
+  fill: var(--blue);
+  transition: fill 250ms, border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__banner a:link {
+  color: var(--black);
+  text-decoration: none;
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 26px;
+}
+.header__banner a:visited {
+  color: var(--black);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header__links {
+  margin-right: 0;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 360px;
+  height: 20px;
+}
+.header__links a {
+  color: var(--grey);
+  text-decoration: none;
+}
+.header__links a:hover {
+  color: var(--blue);
+  transition: fill 250ms, border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__nav-items {
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 46px;
+  margin-left: 93px;
+  margin-right: 345px;
+}
+.header__nav-items a:link {
+  color: var(--black);
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.header__nav-items a:visited {
+  color: var(--black);
+  text-decoration: none;
+}
+.header__nav-items a:hover {
+  color: var(--blue);
+  transition: fill 250ms, border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active {
+  position: relative;
+}
+.active::after {
+  content: "";
+  height: 4px;
+  background-color: var(--blue);
+  position: absolute;
+  border-radius: 2px;
+  width: 100%;
+  bottom: -31px;
+}
