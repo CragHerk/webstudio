@@ -1,14 +1,18 @@
 .third-section {
   background-color: var(--white);
-  width: 1600px;
+  max-width: 1600px;
   padding-bottom: 94px;
 }
 .third-section__workers {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  width: 1170px;
+  max-width: 1170px;
   margin: auto;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .third-section__worker {
   background-color: var(--white);
@@ -27,7 +31,7 @@
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  color: black;
+  color: --var(--black);
 }
 .third-section__social-list {
   display: flex;
@@ -35,3 +39,4 @@
   align-items: center;
   justify-content: center;
 }
+
