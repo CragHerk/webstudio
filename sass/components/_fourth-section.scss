@@ -1,5 +1,11 @@
 .fourth-section__company-svg {
-  display: inline-flex;
+  flex-wrap: wrap;
   gap: 30px;
-  width: 1170px;
+  max-width: 1170px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+.fourth-section__media {
+  max-width: 1170px;
 }
