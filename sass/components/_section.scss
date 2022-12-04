@@ -1,6 +1,7 @@
 .section {
   padding-top: 94px;
 }
+
 .section__style {
   list-style-type: none;
   margin: 0;
@@ -9,18 +10,30 @@
 .section__display {
   display: flex;
   margin: 0;
-  gap: 30px;
+
   color: var(--black);
   margin-bottom: 10px;
   font-size: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
 }
+
 .section__wrapper {
   color: var(--grey);
+  max-width: 350px;
 }
 .section__icon-box {
   height: 120px;
   width: 270px;
-  background-color: var(--white);
+  background-color: #f5f4fa;
   border-radius: 4px;
   display: flex;
   margin-bottom: 30px;
@@ -32,3 +45,4 @@
   height: 70px;
   fill: var(--black);
 }
+
