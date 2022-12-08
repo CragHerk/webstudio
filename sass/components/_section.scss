@@ -1,6 +1,10 @@
 .section {
   padding-top: 94px;
 }
+.section--display {
+  display: flex;
+  justify-content: center;
+}
 
 .section__style {
   list-style-type: none;
@@ -28,11 +32,18 @@
 
 .section__wrapper {
   color: var(--grey);
-  max-width: 350px;
+  max-width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .section__icon-box {
   height: 120px;
-  width: 270px;
+
   background-color: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -45,4 +56,5 @@
   height: 70px;
   fill: var(--black);
 }
+
 
