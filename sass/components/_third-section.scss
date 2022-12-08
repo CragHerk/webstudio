@@ -1,5 +1,5 @@
 .third-section {
-  background-color: var(--white);
+  background-color: #f5f4fa;
   max-width: 1600px;
   padding-bottom: 94px;
 }
@@ -8,11 +8,18 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  max-width: 1170px;
+  width: 480px;
   margin: auto;
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    width: 1200px;
   }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+}
+.third-section__width {
+  width: 1600px;
 }
 .third-section__worker {
   background-color: var(--white);
@@ -39,4 +46,5 @@
   align-items: center;
   justify-content: center;
 }
+
 
