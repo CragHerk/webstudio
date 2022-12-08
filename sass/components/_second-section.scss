@@ -1,5 +1,6 @@
 .second-section {
   padding-top: 94px;
+  width: 1600px;
   @media screen and (max-width: 1200px) {
     display: none;
     opacity: 0;
@@ -13,13 +14,14 @@
 
 .second-section__images {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: row;
   text-align: center;
   padding-bottom: 94px;
 }
 .second-section__image {
   position: relative;
+  margin-right: 30px;
 }
 .second-section__label {
   width: 370px;
