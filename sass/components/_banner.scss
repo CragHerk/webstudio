@@ -28,7 +28,8 @@
   justify-content: center;
   @media screen and (min-width: 300px) {
     width: 360px;
-    height: 350px;
+    margin-top: 115px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -36,6 +37,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 696px;
+    margin-top: 20px;
   }
   @media screen and (min-width: 768px) {
     font-size: 44px;
