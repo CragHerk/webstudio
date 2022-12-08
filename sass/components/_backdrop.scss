@@ -76,6 +76,9 @@ x .envelope-icon {
 
 .formcard__input {
   border: 1px solid var(--black);
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 }
 .formcard__header {
   font-weight: bold;
@@ -95,7 +98,7 @@ x .envelope-icon {
   position: relative;
 }
 .modalinput:focus {
-  outline-color: var(--blue);
+  border: 1px solid var(--blue);
 }
 .modalinput:focus + svg {
   fill: var(--blue);
@@ -139,6 +142,25 @@ x .envelope-icon {
 }
 .newsletter {
   margin-top: 72px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 580px;
+  margin-bottom: 85px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    width: 300px;
+    margin-left: 0px;
+  }
+}
+.newsletter__wrapper {
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
+    display: flex;
+  }
 }
 .newsletter__input {
   width: 358px;
@@ -147,7 +169,17 @@ x .envelope-icon {
   padding-left: 16px;
   background-color: var(--footer-color);
   color: #ffffff99;
+  border-radius: 3px;
   border: 1px solid #ffffff4d;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 450px;
+    margin-left: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
 }
 .newsletter__input:focus {
   outline: 1px solid var(--blue);
@@ -155,11 +187,18 @@ x .envelope-icon {
 .newsletter__button {
   width: 200px;
   height: 50px;
-  position: absolute;
+
   margin-left: 12px;
   color: var(--white);
   background-color: var(--blue);
   margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    margin-left: 42px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 311px;
+  }
 }
 .newsletter__button:hover {
   transition: fill 250ms, border-color 250ms;
