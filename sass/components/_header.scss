@@ -44,6 +44,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 1200px) {
+    position: relative;
+    top: 25px;
+    right: 220px;
+  }
 }
 .phone:hover svg {
   fill: var(--blue);
@@ -54,8 +59,11 @@
   margin-right: auto;
   display: flex;
   align-items: center;
+  width: 85vw;
+
   @media screen and (min-width: 768px) {
     margin-right: 88px;
+    width: auto;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
@@ -96,6 +104,9 @@
     margin-left: auto;
     gap: 30px;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .header__links a {
@@ -118,6 +129,9 @@
   @media screen and (max-width: 1200px) {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }
 .header__nav-items a:link {
@@ -148,3 +162,4 @@
   width: 100%;
   bottom: -31px;
 }
+
