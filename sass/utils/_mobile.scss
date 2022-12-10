@@ -18,17 +18,12 @@
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: var(--black);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   padding: 32px;
   background-color: var(--white);
   z-index: 999;
@@ -42,10 +37,13 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+  opacity: 0;
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+
+  opacity: 1;
 }
 
 .menu-container .menu-toggle {
